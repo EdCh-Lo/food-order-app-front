@@ -1,0 +1,41 @@
+.meals {
+  max-width: 60rem;
+  width: 90%;
+  margin: 2rem auto;
+  animation: meals-appear 1s ease-out forwards;
+}
+
+.meals ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.head svg {
+  font-size: 3rem;
+  margin: 1.5rem 3rem;
+  color: rgb(32, 44, 150);
+}
+
+h1 {
+  margin: 2rem 1rem;
+  color: rgb(32, 44, 150);
+}
+
+@keyframes meals-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
